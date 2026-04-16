@@ -3,10 +3,6 @@
 
 ## What are examples of professional vs. unprofessional behaviour in a casual work environment? (Hint: Think about communication, meeting etiquette, and teamwork.)
 
-
-
-## What does respectful communication look like in remote teams? (e.g., tone in messages, handling disagreements, responding to feedback)
-
 ## Professional vs Unprofessional Behaviour
 
 ### Professional Behaviour:
@@ -21,7 +17,9 @@
 - Not taking responsibility for tasks  
 - Reacting negatively to feedback  
 
-## How can you give and receive feedback professionally? (e.g., focus on actions, not people; assume good intent; ask for clarification instead of reacting defensively)
+
+
+## What does respectful communication look like in remote teams? (e.g., tone in messages, handling disagreements, responding to feedback)
 
 In remote teams, communication should be:
 - Clear and direct to avoid confusion  
@@ -30,7 +28,7 @@ In remote teams, communication should be:
 
 When disagreements happen, I will focus on understanding the issue rather than reacting emotionally, and aim to resolve it constructively.
 
-## Review this guide for working with supervisors
+## How can you give and receive feedback professionally? (e.g., focus on actions, not people; assume good intent; ask for clarification instead of reacting defensively)
 
 When giving feedback:
 - Focus on the task, not the person  
