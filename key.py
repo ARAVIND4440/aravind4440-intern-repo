@@ -1,0 +1,13 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv(override=True)
+
+db_host = os.getenv("DB_HOST")
+db_user = os.getenv("DB_USER")
+db_password = os.getenv("DB_PASSWORD")
+db_name = os.getenv("DB_NAME")
+
+print("Host:", db_host)
+print("User:", db_user)
+print("Database:", db_name)
