@@ -124,3 +124,86 @@ Refactoring improved readability by replacing unclear names with meaningful ones
 
 ## Overall Learning
 From this task, I learned that clean code is not just about functionality but also about clarity. Writing clear and meaningful code makes it easier to maintain, debug, and collaborate with others.
+
+# Breaking Down Large Functions Reflection
+
+## Why Small Functions Matter
+
+Small functions are easier to read, test, debug, and maintain. Each function should have one clear responsibility. When a function does too many things, it becomes harder to understand and risky to modify later.
+
+
+## Long Function Example
+
+```python
+
+def process_student_results(students):
+    passed_students = []
+    failed_students = []
+
+    for student in students:
+        total = student["math"] + student["science"] + student["english"]
+        average = total / 3
+
+        if average >= 50:
+            passed_students.append(student["name"])
+        else:
+            failed_students.append(student["name"])
+
+    print("Passed Students:")
+    for student in passed_students:
+        print(student)
+
+    print("Failed Students:")
+    for student in failed_students:
+        print(student)  
+```
+## Problems with This Code    
+
+- This function does too many things at once. It calculates totals, checks pass or fail status, stores results, and prints the output. Because of this, it is harder to test or change only one part of the logic.
+
+``` updated python code 
+
+PASS_MARK = 50
+
+def calculate_average(student):
+    total = student["math"] + student["science"] + student["english"]
+    return total / 3
+
+
+def has_passed(student):
+    return calculate_average(student) >= PASS_MARK
+
+
+def separate_students_by_result(students):
+    passed_students = []
+    failed_students = []
+
+    for student in students:
+        if has_passed(student):
+            passed_students.append(student["name"])
+        else:
+            failed_students.append(student["name"])
+
+    return passed_students, failed_students
+
+
+def print_student_results(passed_students, failed_students):
+    print("Passed Students:")
+    for student in passed_students:
+        print(student)
+
+    print("Failed Students:")
+    for student in failed_students:
+        print(student)
+``` 
+
+## How Refactoring Improved the Code
+
+The refactored version is easier to understand because each function has one clear job. calculate_average() handles calculation, has_passed() checks the result, separate_students_by_result() organises students, and print_student_results() handles output.
+This makes the code easier to test, reuse, and update.
+
+## Reflection
+
+- Breaking down large functions is beneficial because it reduces complexity and makes code easier to maintain. If a bug happens, it becomes easier to identify which part of the logic needs fixing.
+- From this task, I learned that smaller functions make code more organised and readable. Refactoring improved the structure by separating responsibilities instead of keeping everything inside one large function.
+
