@@ -55,3 +55,24 @@ The cleaner version uses meaningful names such as calculate_total_passing_score,
 
 From this task, I learned that clean code is not just about making code work. It is about writing code that other people can read, understand, and maintain. In team projects, clean code reduces confusion and makes collaboration easier.
 I also learned that small improvements like better variable names, proper spacing, and avoiding hardcoded values can make code much easier to work with.
+
+
+---
+
+# Code Formatting and Linting Reflection
+
+## Why is code formatting important?
+
+Code formatting is important because it makes the codebase easier to read, review, and maintain. When everyone follows the same style, developers do not waste time arguing about spacing, indentation, quotes, or semicolons. It also makes the project look more professional and consistent.
+
+## What issues did the linter detect?
+
+While testing ESLint and Prettier, the main issues were related to formatting and style consistency, such as spacing, quote style, semicolons, and general code structure. These are small issues, but fixing them makes the code easier to read and keeps it consistent with the project style.
+
+## Did formatting the code make it easier to read?
+
+Yes, formatting made the code easier to read because the structure became cleaner and more consistent. Prettier automatically handled spacing and formatting, while ESLint helped identify style issues. This showed me how useful these tools are in team projects because they reduce manual effort and keep the codebase clean.
+
+## Reflection
+
+I learned that formatting and linting are not just about making code look nice. They help teams maintain a shared coding standard and reduce confusion during code reviews. In a real project, tools like ESLint and Prettier allow developers to focus more on logic and functionality instead of spending time on formatting issues.
