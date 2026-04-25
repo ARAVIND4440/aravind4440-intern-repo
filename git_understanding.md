@@ -128,3 +128,24 @@ This makes debugging more efficient and helps developers find the cause of bugs 
 ## What I learned
 
 I learned that git bisect is useful when the cause of a bug is not obvious. It helps track down the exact commit where the problem started, which makes debugging cleaner and more organised.
+
+# Git Commit Message Reflection
+
+## What makes a good commit message?
+
+A good commit message clearly explains what changed and why it matters. It should be short enough to read quickly, but still meaningful enough for another developer to understand the purpose of the change. From looking at open-source commit histories like React, I noticed that good commit messages are usually clear, action-based, and specific rather than vague.
+
+For example, `Add commit message examples` is much better than `fixed stuff` because it tells the reader exactly what was changed.
+
+## How does a clear commit message help in team collaboration?
+
+Clear commit messages help teammates understand the project history without opening every file or commit diff. In a team, this is useful during code reviews, debugging, and when someone needs to understand why a change was made later. A good commit history works like documentation for the project.
+
+## How can poor commit messages cause issues later?
+
+Poor commit messages can make it hard to understand what changed and why. Messages like `fixed stuff` or `updates` do not give enough context, so developers may waste time investigating old changes. This can create confusion during debugging, reviewing pull requests, or tracking down when a bug was introduced.
+
+## What I learned
+
+I learned that commit messages should be clear, specific, and useful for future readers. The most useful style for me is a short action-based message, such as `Add Git branching reflection` or `Fix typo in README`. I also learned that overly detailed messages can be unnecessary when the change is simple, while vague messages are not helpful at all.
+Then
