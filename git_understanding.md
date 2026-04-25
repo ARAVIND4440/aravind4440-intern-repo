@@ -104,3 +104,27 @@ In a real project, I would use this carefully to understand context, not to blam
 The most surprising command was git cherry-pick because it allows selecting only one commit from another branch instead of merging the whole branch. This showed me how flexible Git can be in long-running projects with multiple developers.
 
 I also found git blame useful because it gives detailed line-by-line history, which can help when trying to understand why a specific change was made.
+
+# Git Bisect Reflection
+
+## What does git bisect do?
+
+git bisect is a debugging tool that helps identify which commit introduced a bug. It works by using a binary search through the commit history. Instead of checking every commit manually, Git checks commits in the middle and asks whether each version is good or bad until it finds the first bad commit.
+
+
+## When would you use it in a real-world debugging situation?
+
+I would use git bisect when a bug appears in a project but I am not sure which commit caused it. This is especially useful in long-running projects with many developers, where many changes may have been added over time.
+
+For example, if a feature was working last week but is broken now, git bisect can help find the exact commit that introduced the issue.
+
+
+## How does it compare to manually reviewing commits?
+
+Compared to manually reviewing commits, git bisect is much faster and more systematic. Manually checking commits can take a lot of time, especially if there are many commits. git bisect reduces the number of checks by narrowing down the problem step by step.
+
+This makes debugging more efficient and helps developers find the cause of bugs with less guesswork.
+
+## What I learned
+
+I learned that git bisect is useful when the cause of a bug is not obvious. It helps track down the exact commit where the problem started, which makes debugging cleaner and more organised.
