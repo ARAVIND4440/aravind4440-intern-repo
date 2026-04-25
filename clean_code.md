@@ -207,3 +207,70 @@ This makes the code easier to test, reuse, and update.
 - Breaking down large functions is beneficial because it reduces complexity and makes code easier to maintain. If a bug happens, it becomes easier to identify which part of the logic needs fixing.
 - From this task, I learned that smaller functions make code more organised and readable. Refactoring improved the structure by separating responsibilities instead of keeping everything inside one large function.
 
+---
+
+# DRY Principle Reflection
+
+## What is the DRY Principle?
+
+DRY stands for "Don't Repeat Yourself". It means avoiding unnecessary duplication in code. If the same logic is written multiple times, it becomes harder to maintain because every future change needs to be updated in multiple places.
+
+---
+
+## Repeated Code Example
+
+```python
+def print_student_report(name, math_score, science_score, english_score):
+    total = math_score + science_score + english_score
+    average = total / 3
+
+    print("Student Name:", name)
+    print("Total Score:", total)
+    print("Average Score:", average)
+
+
+def print_employee_training_report(name, test1_score, test2_score, test3_score):
+    total = test1_score + test2_score + test3_score
+    average = total / 3
+
+    print("Employee Name:", name)
+    print("Total Score:", total)
+    print("Average Score:", average)
+
+```
+
+## Issues with Duplicated Code
+- The same logic for calculating total and average is repeated in both functions. If the calculation needs to change later, it must be updated in multiple places. This increases the chance of mistakes and makes the code harder to maintain.
+
+```python
+
+def calculate_total_and_average(scores):
+    total = sum(scores)
+    average = total / len(scores)
+    return total, average
+
+
+def print_report(label, name, scores):
+    total, average = calculate_total_and_average(scores)
+
+    print(f"{label} Name: {name}")
+    print("Total Score:", total)
+    print("Average Score:", average)
+
+
+print_report("Student", "Aravind", [80, 75, 90])
+print_report("Employee", "John", [70, 85, 88])
+
+```
+
+## How Refactoring Improved Maintainability
+
+- The refactored version removes repeated calculation and printing logic. Now, the total and average calculation is handled in one function, and the report printing is handled in another reusable function.
+If the calculation or report format needs to change later, it only needs to be updated in one place.
+
+## Reflection
+
+- From this task, I learned that duplicated code may look harmless at first, but it creates maintenance problems over time. Refactoring using the DRY principle makes code cleaner, reusable, and easier to update.
+This also reduces the chance of inconsistent behaviour when the same logic is repeated in different parts of the project.
+
+
