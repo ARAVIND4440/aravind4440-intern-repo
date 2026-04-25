@@ -7,29 +7,32 @@ As a data science student and intern, I use AI tools like ChatGPT mainly to supp
 ## What are the benefits and risks of using AI in a professional setting?
 
 ### Benefits:
-- Saves time when working on tasks or learning new topics  
-- Helps me understand concepts more quickly  
-- Useful for brainstorming and problem-solving  
+
+- Saves time when working on tasks or learning new topics
+- Helps me understand concepts more quickly
+- Useful for brainstorming and problem-solving
 
 ### Risks:
-- Sometimes gives incorrect or incomplete information  
-- Risk of accidentally sharing sensitive data  
-- Can lead to over-reliance if used without thinking critically  
+
+- Sometimes gives incorrect or incomplete information
+- Risk of accidentally sharing sensitive data
+- Can lead to over-reliance if used without thinking critically
 
 ## What types of information should never be entered into AI tools?
 
-- Company or project confidential data  
-- Personal or user information  
-- Passwords, API keys, or credentials  
-- Any internal details that are not meant to be shared publicly  
+- Company or project confidential data
+- Personal or user information
+- Passwords, API keys, or credentials
+- Any internal details that are not meant to be shared publicly
 
 ## How can you fact-check and validate AI-generated content to ensure accuracy?
 
 I understand that AI is not always accurate, so I make sure to:
-- Double-check information using trusted sources  
-- Review and edit the output before using it  
-- Test any code provided  
-- Use my own understanding to confirm the results 
+
+- Double-check information using trusted sources
+- Review and edit the output before using it
+- Test any code provided
+- Use my own understanding to confirm the results
 
 ## Reflection
 

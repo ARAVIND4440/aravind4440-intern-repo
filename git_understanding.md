@@ -31,13 +31,11 @@ Staging means selecting the changes that I want to include in the next commit. I
 
 Committing means saving the staged changes into Git history with a commit message. Once committed, the change becomes part of the project timeline.
 
-
 ## Why does Git separate these two steps?
 
 Git separates staging and committing so developers can control exactly what changes go into each commit. This is useful when multiple files are changed, but only some changes are related to one task.
 
 It helps keep commits clean, organised, and easier to review.
-
 
 ## When would you want to stage changes without committing?
 
@@ -45,10 +43,7 @@ I would stage changes without committing when I want to review what I am about t
 
 For example, if I modify multiple files, I can stage only the files related to one task and commit them separately.
 
-This line is added for testing 
-<<<<<<< HEAD
->>>>>>> Test_branch_1
-=======
+This line is added for testing
 
 # Git Merge Conflict Reflection
 
@@ -63,7 +58,6 @@ I resolved the conflict using VS Code. VS Code showed the conflicting changes an
 ## What did I learn?
 
 I learned that merge conflicts are a normal part of working with Git, especially when multiple people edit the same file or same section of code. I also learned that VS Code makes it easier to identify and resolve conflicts visually. The main lesson is to communicate clearly in teams and pull the latest changes regularly to reduce conflicts.
-
 
 # Advanced Git Commands Reflection
 
@@ -111,13 +105,11 @@ I also found git blame useful because it gives detailed line-by-line history, wh
 
 git bisect is a debugging tool that helps identify which commit introduced a bug. It works by using a binary search through the commit history. Instead of checking every commit manually, Git checks commits in the middle and asks whether each version is good or bad until it finds the first bad commit.
 
-
 ## When would you use it in a real-world debugging situation?
 
 I would use git bisect when a bug appears in a project but I am not sure which commit caused it. This is especially useful in long-running projects with many developers, where many changes may have been added over time.
 
 For example, if a feature was working last week but is broken now, git bisect can help find the exact commit that introduced the issue.
-
 
 ## How does it compare to manually reviewing commits?
 

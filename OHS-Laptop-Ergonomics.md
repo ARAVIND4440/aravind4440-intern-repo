@@ -3,33 +3,37 @@
 ## What are the risks of using a laptop without an external monitor or keyboard?
 
 Some risks I identified are:
-- Neck and shoulder pain from looking down at the screen  
-- Wrist discomfort due to improper typing angle  
-- Lower back pain from poor sitting posture  
-- Eye strain from continuous screen exposure 
+
+- Neck and shoulder pain from looking down at the screen
+- Wrist discomfort due to improper typing angle
+- Lower back pain from poor sitting posture
+- Eye strain from continuous screen exposure
 
 ## What ergonomic equipment can improve posture when working on a laptop? (e.g., laptop stands, external keyboards, ergonomic chairs)
 
 To improve my setup, I made the following changes:
-- Raised my laptop using books to bring the screen closer to eye level  
-- Adjusted my chair height so my feet are flat on the ground  
-- Ensured I sit upright with back support  
+
+- Raised my laptop using books to bring the screen closer to eye level
+- Adjusted my chair height so my feet are flat on the ground
+- Ensured I sit upright with back support
 
 ## What adjustments should be made to monitor height, chair position, and desk setup for a healthier workspace?
 
 A healthy setup includes:
-- Screen at eye level to avoid neck strain  
-- Chair adjusted for proper back support  
-- Keyboard at a comfortable height  
-- Maintaining a neutral wrist position  
+
+- Screen at eye level to avoid neck strain
+- Chair adjusted for proper back support
+- Keyboard at a comfortable height
+- Maintaining a neutral wrist position
 
 ## What are some daily habits that reduce the impact of prolonged laptop use? (e.g., movement breaks, posture checks, eye strain reduction techniques)
 
 To reduce strain during work, I started:
-- Taking short breaks every 30–60 minutes  
-- Following the 20-20-20 rule to reduce eye strain  
-- Stretching and moving around regularly  
-- Being more aware of my sitting posture  
+
+- Taking short breaks every 30–60 minutes
+- Following the 20-20-20 rule to reduce eye strain
+- Stretching and moving around regularly
+- Being more aware of my sitting posture
 
 # Reflection
 
@@ -61,4 +65,4 @@ After these changes, I noticed reduced neck strain and felt more comfortable wor
 
 ## Document at least one workspace change or habit adjustment you made.
 
-my one workplace changes that is "small adjustments in workspace setup and daily habits can significantly improve comfort, reduce physical strain, and increase productivity." 
+my one workplace changes that is "small adjustments in workspace setup and daily habits can significantly improve comfort, reduce physical strain, and increase productivity."
