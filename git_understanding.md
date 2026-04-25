@@ -19,3 +19,5 @@ It helps keep commits clean, organised, and easier to review.
 I would stage changes without committing when I want to review what I am about to commit first. It is also useful when I am preparing a specific set of changes but want to double-check them before creating the final commit.
 
 For example, if I modify multiple files, I can stage only the files related to one task and commit them separately.
+
+This line is added for testing 
