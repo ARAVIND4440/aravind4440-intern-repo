@@ -63,4 +63,44 @@ I resolved the conflict using VS Code. VS Code showed the conflicting changes an
 ## What did I learn?
 
 I learned that merge conflicts are a normal part of working with Git, especially when multiple people edit the same file or same section of code. I also learned that VS Code makes it easier to identify and resolve conflicts visually. The main lesson is to communicate clearly in teams and pull the latest changes regularly to reduce conflicts.
->>>>>>> 2532169 (updated the merge conflict reflection)
+
+
+# Advanced Git Commands Reflection
+
+## git checkout main -- <file>
+
+This command restores a specific file from the main branch without affecting other files or changes. It is useful when I accidentally modify a file and want to reset only that file instead of resetting the whole project.
+
+In a real project, I would use this when I want to discard unwanted changes in one file while keeping my other work safe.
+
+---
+
+## git cherry-pick <commit>
+
+The git cherry-pick command applies one specific commit from another branch into the current branch without merging the entire branch. This is useful when I only need one change from another branch, but I do not want to bring all other changes from that branch.
+
+In a real project, this is helpful when a bug fix exists on another branch and needs to be applied quickly to main or a release branch.
+
+---
+
+## git log
+
+The git log command shows the commit history of the repository. It helps me understand what changes were made, when they were made, and by whom.
+
+In a real project, I would use git log to track the history of changes, find specific commits, and understand how the code evolved over time.
+
+---
+
+## git blame <file>
+
+The git blame command shows who last modified each line of a file and when. This is useful for understanding the history of specific lines of code.
+
+In a real project, I would use this carefully to understand context, not to blame someone personally. It helps identify who to ask when I need more information about a specific change.
+
+---
+
+## What surprised me?
+
+The most surprising command was git cherry-pick because it allows selecting only one commit from another branch instead of merging the whole branch. This showed me how flexible Git can be in long-running projects with multiple developers.
+
+I also found git blame useful because it gives detailed line-by-line history, which can help when trying to understand why a specific change was made.
