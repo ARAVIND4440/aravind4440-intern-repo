@@ -135,7 +135,7 @@ I learned that git bisect is useful when the cause of a bug is not obvious. It h
 
 A good commit message clearly explains what changed and why it matters. It should be short enough to read quickly, but still meaningful enough for another developer to understand the purpose of the change. From looking at open-source commit histories like React, I noticed that good commit messages are usually clear, action-based, and specific rather than vague.
 
-For example, `Add commit message examples` is much better than `fixed stuff` because it tells the reader exactly what was changed.
+For example, Add commit message examples is much better than fixed stuff because it tells the reader exactly what was changed.
 
 ## How does a clear commit message help in team collaboration?
 
@@ -143,9 +143,27 @@ Clear commit messages help teammates understand the project history without open
 
 ## How can poor commit messages cause issues later?
 
-Poor commit messages can make it hard to understand what changed and why. Messages like `fixed stuff` or `updates` do not give enough context, so developers may waste time investigating old changes. This can create confusion during debugging, reviewing pull requests, or tracking down when a bug was introduced.
+Poor commit messages can make it hard to understand what changed and why. Messages like fixed stuff or updates do not give enough context, so developers may waste time investigating old changes. This can create confusion during debugging, reviewing pull requests, or tracking down when a bug was introduced.
 
 ## What I learned
 
-I learned that commit messages should be clear, specific, and useful for future readers. The most useful style for me is a short action-based message, such as `Add Git branching reflection` or `Fix typo in README`. I also learned that overly detailed messages can be unnecessary when the change is simple, while vague messages are not helpful at all.
+I learned that commit messages should be clear, specific, and useful for future readers. The most useful style for me is a short action-based message, such as Add Git branching reflection or Fix typo in README. I also learned that overly detailed messages can be unnecessary when the change is simple, while vague messages are not helpful at all.
 Then
+
+# Pull Request Reflection
+
+## Why are PRs important in a team workflow?
+
+Pull Requests are important because they allow code changes to be reviewed before they are merged into the main branch. This helps teams catch mistakes early, discuss improvements, and keep the main branch stable. Instead of pushing directly to main, developers can work safely on separate branches and get feedback before merging.
+
+## What makes a well-structured PR?
+
+A well-structured PR should have a clear title, a useful description, and a summary of what was changed. It should also mention how the change was tested and link to a related issue if there is one. A good PR makes it easier for reviewers to understand the purpose of the change without guessing.
+
+## What did I learn from reviewing an open-source PR?
+
+While reviewing open-source PR discussions, I noticed that reviewers usually focus on clarity, code quality, testing, and maintainability. They may request changes, ask questions, or approve the PR once the code looks good. I also learned that review comments should be constructive and focused on improving the work, not criticising the person.
+
+## Reflection
+
+This task helped me understand that PRs are not just about merging code. They are also a communication tool for collaboration. A good PR makes teamwork smoother because everyone can understand what changed, why it changed, and whether it is safe to merge.
