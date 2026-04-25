@@ -46,4 +46,21 @@ I would stage changes without committing when I want to review what I am about t
 For example, if I modify multiple files, I can stage only the files related to one task and commit them separately.
 
 This line is added for testing 
+<<<<<<< HEAD
 >>>>>>> Test_branch_1
+=======
+
+# Git Merge Conflict Reflection
+
+## What caused the conflict?
+
+The conflict happened because I edited the same part of git_understanding.md in two different branches. I first made a change in the Test_branch_1 branch, then switched back to main and made a different change in the same location. When I tried to merge the branch back into main, Git could not automatically decide which version to keep.
+
+## How did I resolve it?
+
+I resolved the conflict using VS Code. VS Code showed the conflicting changes and gave options such as accepting the current change, accepting the incoming change, or accepting both changes. I reviewed both versions and chose to keep both changes, then cleaned up the conflict markers manually and committed the resolved file.
+
+## What did I learn?
+
+I learned that merge conflicts are a normal part of working with Git, especially when multiple people edit the same file or same section of code. I also learned that VS Code makes it easier to identify and resolve conflicts visually. The main lesson is to communicate clearly in teams and pull the latest changes regularly to reduce conflicts.
+>>>>>>> 2532169 (updated the merge conflict reflection)
