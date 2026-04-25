@@ -76,3 +76,51 @@ Yes, formatting made the code easier to read because the structure became cleane
 ## Reflection
 
 I learned that formatting and linting are not just about making code look nice. They help teams maintain a shared coding standard and reduce confusion during code reviews. In a real project, tools like ESLint and Prettier allow developers to focus more on logic and functionality instead of spending time on formatting issues.
+
+
+## poor version 
+
+def f(a):
+    r = 0
+    for i in a:
+        if i > 10:
+            r += i
+    return r
+
+- Function name f is meaningless
+- Variable a does not explain what it holds
+- Variable r is unclear
+- Difficult to understand without reading entire code    
+
+## Better version 
+
+MINIMUM_VALUE = 10
+
+def calculate_sum_of_values_above_minimum(numbers):
+    total_sum = 0
+
+    for number in numbers:
+        if number > MINIMUM_VALUE:
+            total_sum += number
+
+    return total_sum
+
+- Function name clearly describes purpose
+- Variable names are meaningful
+- Constant explains the condition
+- Code is self-explanatory    
+
+# Reflection
+## What makes a good variable or function name?
+
+A good name clearly describes the purpose of the variable or function. It should be easy to understand without needing extra explanation. Names should be meaningful, consistent, and reflect what the code is doing.
+
+## What issues can arise from poorly named variables?
+
+Poor naming can lead to confusion and make the code harder to understand. It increases the time needed for debugging and makes collaboration difficult. Developers may misunderstand the logic or make mistakes when modifying the code.
+
+## How did refactoring improve code readability?
+Refactoring improved readability by replacing unclear names with meaningful ones, improving formatting, and removing ambiguity. The updated code is easier to understand at a glance without needing additional explanation.
+
+## Overall Learning
+From this task, I learned that clean code is not just about functionality but also about clarity. Writing clear and meaningful code makes it easier to maintain, debug, and collaborate with others.
