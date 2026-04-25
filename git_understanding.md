@@ -19,3 +19,5 @@ If two people edit the same file on different branches, Git will create a merge 
 ## Reflection
 
 Working with branches helps maintain a structured and safe development process. It allows experimentation without risk and improves collaboration by enabling proper code review and conflict management.
+
+This line was added from the conflict-test branch.
