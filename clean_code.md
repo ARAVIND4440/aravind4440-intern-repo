@@ -489,5 +489,63 @@ Comments should be avoided when the code can be made clearer through better nami
 - I also learned that too many unnecessary comments can make code harder to read. In many cases, improving function names, variable names, and structure is better than adding comments everywhere.
 
 
+---
+
+# Unit Testing Reflection
+
+## Why Unit Testing Is Important
+
+Unit testing is important because it helps confirm that small parts of code work correctly. Instead of manually checking the function every time, tests can automatically verify whether the expected output is correct.
+
+For this task, I used PyTest because it is simple, widely used in Python projects, and easy to run from the terminal.
+
+---
+
+## Function Tested
+
+```python
+def calculate_average(scores):
+    if not scores:
+        raise ValueError("Scores list cannot be empty.")
+
+    return sum(scores) / len(scores)
+```
+
+## Unit Tests Written
+
+``` python 
+import pytest
+from calculator import calculate_average
+
+
+def test_calculate_average_with_valid_scores():
+    assert calculate_average([80, 90, 100]) == 90
+
+
+def test_calculate_average_with_single_score():
+    assert calculate_average([75]) == 75
+
+
+def test_calculate_average_with_empty_list():
+    with pytest.raises(ValueError):
+        calculate_average([])
+```
+
+## How Do Unit Tests Help Keep Code Clean?
+
+- Unit tests help keep code clean because they make the code safer to change. If I refactor or improve a function later, tests can quickly show whether the function still works correctly. This supports clean code because developers can improve structure without fear of breaking existing behaviour.
+- Unit tests also encourage writing smaller functions, because smaller functions are easier to test.
+
+## What Issues Did I Find While Testing?
+
+- While testing, I realised that the function should handle an empty list properly. Without error handling, dividing by the length of an empty list would cause an issue. Adding a clear ValueError made the function more reliable and easier to debug.
+
+## Reflection
+From this task, I learned that unit tests are not just for finding bugs. They also improve confidence when changing code. In real projects, tests help teams avoid breaking existing features and make the codebase more maintainable.
+
+
+
+
+
 
 
