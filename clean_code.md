@@ -273,4 +273,94 @@ If the calculation or report format needs to change later, it only needs to be u
 - From this task, I learned that duplicated code may look harmless at first, but it creates maintenance problems over time. Refactoring using the DRY principle makes code cleaner, reusable, and easier to update.
 This also reduces the chance of inconsistent behaviour when the same logic is repeated in different parts of the project.
 
+---
+
+# Refactoring Techniques Reflection
+
+## Common Refactoring Techniques
+
+Some common refactoring techniques include:
+
+- Renaming variables and functions to make their purpose clearer
+- Breaking large functions into smaller functions
+- Removing duplicated code
+- Replacing complex conditions with clear helper functions
+- Using constants instead of hardcoded values
+- Simplifying nested logic
+
+---
+
+## Overly Complicated Code Example
+
+```python
+def check_discount(user_type, total_amount, is_member):
+    if user_type == "student":
+        if total_amount > 100:
+            if is_member == True:
+                return 20
+            else:
+                return 15
+        else:
+            if is_member == True:
+                return 10
+            else:
+                return 5
+    else:
+        if total_amount > 100:
+            if is_member == True:
+                return 12
+            else:
+                return 8
+        else:
+            return 0
+
+```
+
+## What Made the Original Code Complex?
+
+The original code is difficult to read because it has too many nested if statements. The logic is correct, but it takes more effort to understand because the conditions are repeated and deeply nested. It also uses is_member == True, which is unnecessary.
+
+## Refactored Version
+
+```python 
+HIGH_SPEND_THRESHOLD = 100
+
+def is_high_spender(total_amount):
+    return total_amount > HIGH_SPEND_THRESHOLD
+
+
+def check_discount(user_type, total_amount, is_member):
+    if user_type == "student" and is_high_spender(total_amount) and is_member:
+        return 20
+
+    if user_type == "student" and is_high_spender(total_amount):
+        return 15
+
+    if user_type == "student" and is_member:
+        return 10
+
+    if user_type == "student":
+        return 5
+
+    if is_high_spender(total_amount) and is_member:
+        return 12
+
+    if is_high_spender(total_amount):
+        return 8
+
+    return 0
+```
+
+## How Did Refactoring Improve It?
+
+The refactored version is easier to read because the nested conditions were simplified. The helper function is_high_spender() makes the condition more meaningful, and the constant HIGH_SPEND_THRESHOLD explains what the number 100 represents.
+The code now reads more clearly from top to bottom and is easier to update later.
+
+## Reflection
+
+From this task, I learned that refactoring does not always mean changing what the code does. It often means improving how the code is written so that it is easier to understand and maintain.
+The original code was complex because of too much nesting and repeated logic. Refactoring improved it by making the conditions clearer, reducing mental effort, and improving readability.
+
+
+
 
