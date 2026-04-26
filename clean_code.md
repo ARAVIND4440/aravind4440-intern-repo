@@ -361,6 +361,72 @@ The code now reads more clearly from top to bottom and is easier to update later
 From this task, I learned that refactoring does not always mean changing what the code does. It often means improving how the code is written so that it is easier to understand and maintain.
 The original code was complex because of too much nesting and repeated logic. Refactoring improved it by making the conditions clearer, reducing mental effort, and improving readability.
 
+---
+
+# Error Handling and Edge Cases Reflection
+
+## Error Handling Strategies
+
+Some common strategies for handling errors and edge cases include:
+
+- Using guard clauses to check invalid inputs early
+- Validating data types before processing
+- Handling empty or missing values
+- Using meaningful error messages
+- Avoiding assumptions about user input
+- Returning safe defaults where appropriate
+
+Guard clauses are especially useful because they stop the function early when the input is invalid. This makes the main logic cleaner and easier to read.
+
+---
+
+## Original Code Example
+
+```python
+def calculate_average(scores):
+    total = sum(scores)
+    average = total / len(scores)
+    return average
+```    
+
+## Issue with the Original Code
+- This function works only when valid scores are provided. If the list is empty, it will cause a division by zero error. 
+- If scores is None or contains non-numeric values, the function will also fail.
+- The original code assumes the input will always be correct, which is risky in real projects.   
+
+## Refactored Code with Error Handling
+
+``` python 
+
+def calculate_average(scores):
+    if scores is None:
+        raise ValueError("Scores cannot be None.")
+
+    if not isinstance(scores, list):
+        raise TypeError("Scores must be provided as a list.")
+
+    if len(scores) == 0:
+        raise ValueError("Scores list cannot be empty.")
+
+    for score in scores:
+        if not isinstance(score, (int, float)):
+            raise TypeError("All scores must be numbers.")
+
+    total = sum(scores)
+    return total / len(scores)
+
+ ```
+
+## How the Refactored Code Improved Reliability
+- The refactored version checks for invalid inputs before doing the calculation. This prevents unexpected crashes and gives clear error messages when something is wrong.
+- By using guard clauses, the function becomes safer and easier to understand. The main calculation only happens after the input has been validated.
+
+
+## Reflection
+- From this task, I learned that robust code should not assume everything will always go correctly. Good error handling helps prevent crashes, makes debugging easier, and improves user trust.
+- Handling edge cases is especially important in real projects because users or systems may provide unexpected inputs. By validating data early, the code becomes more reliable and easier to maintain.
+
+
 
 
 
