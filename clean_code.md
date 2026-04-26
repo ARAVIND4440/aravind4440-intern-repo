@@ -426,6 +426,67 @@ def calculate_average(scores):
 - From this task, I learned that robust code should not assume everything will always go correctly. Good error handling helps prevent crashes, makes debugging easier, and improves user trust.
 - Handling edge cases is especially important in real projects because users or systems may provide unexpected inputs. By validating data early, the code becomes more reliable and easier to maintain.
 
+---
+
+# Comments and Documentation Reflection
+
+## Best Practices for Comments
+
+Good comments should explain why something is done, not just repeat what the code already says. Comments are helpful when the logic is complex, when there is an important business rule, or when future developers need extra context.
+
+Comments should be clear, short, and kept up to date. Outdated comments can be more confusing than no comments at all.
+
+---
+
+## Poorly Commented Code Example
+
+```python
+# function
+def calculate_discount(price):
+    # check price
+    if price > 100:
+        # return discount
+        return price * 0.10
+    # return zero
+    return 0
+```
+
+## Issue with the Comments
+
+The comments are not very useful because they only describe what the code already shows. For example, # return discount does not explain why the discount is applied or what the rule means.
+
+## Improved Comments Example
+
+``` python 
+DISCOUNT_THRESHOLD = 100
+DISCOUNT_RATE = 0.10
+
+def calculate_discount(price):
+    # Customers receive a 10% discount only when their purchase is above the minimum threshold.
+    if price > DISCOUNT_THRESHOLD:
+        return price * DISCOUNT_RATE
+
+    return 0
+
+```
+## Why This Is Better
+
+The improved comment explains the reason behind the rule instead of repeating the code. Constants also make the code clearer, so fewer comments are needed.
+
+## When Should You Add Comments?
+Comments should be added when:
+- The logic is complex
+- There is a business rule that is not obvious
+- The code has a workaround or special case
+- Future developers may need extra context
+
+## When Should You Avoid Comments and Improve the Code Instead?
+Comments should be avoided when the code can be made clearer through better naming or structure. If a comment is only explaining what a variable or function does, it may be better to rename the variable or function.
+
+## Reflection
+
+- From this task, I learned that comments should support the code, not replace clear code. Good code should be readable on its own, and comments should only add useful context where needed.
+- I also learned that too many unnecessary comments can make code harder to read. In many cases, improving function names, variable names, and structure is better than adding comments everywhere.
 
 
 
