@@ -21,7 +21,7 @@ The best way to reach me is through messages (Slack/Discord/email), as I can res
 
 If something is urgent, please send a direct message so I can prioritise it immediately.
 
-I also prefer an Quick call for an serious escalation 
+I also prefer an Quick call for an serious escalation
 
 ## Collaboration & Teamwork
 

@@ -4,11 +4,9 @@
 
 I use the default Mac terminal with `zsh` as my shell. Since I am already working on a Mac, this was the most practical choice for me. It is lightweight, reliable, and already integrated well into my development workflow. I also use it regularly for Git commands, running Python files, navigating directories, and managing project files.
 
-
 ## What customizations (if any) did you make?
 
 At the moment, I have not made major customizations, but I am comfortable using `zsh` as my default shell. I have mainly focused on becoming more confident with terminal commands and using it efficiently for daily development tasks. In the future, I may explore aliases or themes to improve productivity further.
-
 
 ## What was the most useful command you learned today?
 
