@@ -23,3 +23,9 @@ jobs:
 
       - name: Run markdown lint
         run: markdownlint "**/*.md"
+
+      - name: Install cspell
+        run: npm install -g cspell
+
+      - name: Run spell check
+        run: cspell "**/*.md"  
